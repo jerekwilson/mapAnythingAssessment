@@ -16,7 +16,7 @@ let GoogleTimeZoneRoutes = require('./routes/GoogleTimeZoneRoutes');
 
 // Load configuration values from Arguments on command line, then JSON file
 nconf.argv();
-nconf.file(__dirname + '/config.json').env();
+nconf.file('./config.json').env();
 
 
 app.get('/ping', function(req, res) {
