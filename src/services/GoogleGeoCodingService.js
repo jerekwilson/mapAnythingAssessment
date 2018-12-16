@@ -5,7 +5,7 @@
 let axios = require('axios');
 let nconf = require('nconf');
 
-exports.getAddress = function(address,token) {    
+exports.getAddress = function(address) {    
 
     let path = nconf.get('googleMapsGeocodeURL');
     console.debug("Geocode Path: " + path);

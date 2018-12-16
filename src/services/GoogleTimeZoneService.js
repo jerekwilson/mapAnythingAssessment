@@ -5,7 +5,7 @@
 let axios = require('axios');
 let nconf = require('nconf');
 
-exports.getTimeZone = function(location,timestamp,token) {    
+exports.getTimeZone = function(location,timestamp) {    
 
     let path = nconf.get('googleMapsTimezoneURL');
     console.debug("Timezone Path: " + path);
